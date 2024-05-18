@@ -7,6 +7,7 @@ const Pasien = function(pasien) {
     this.no_telp_pasien = pasien.no_telp_pasien;
     this.keluhan = pasien.keluhan;
     this.konsultasi_dokter = pasien.konsultasi_dokter;
+    this.jam_konsultasi = pasien.jam_konsultasi;
 };
 
 Pasien.create = (newPasien, result) => {
