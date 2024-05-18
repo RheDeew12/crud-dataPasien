@@ -11,7 +11,7 @@ const Pasien = function(data_pasien) {
 };
 
 Pasien.create = (newPasien, result) => {
-    connection.query("INSERT INTO pasien SET ?", newPasien, (err, res) => {
+    connection.query("INSERT INTO data_pasien SET ?", newPasien, (err, res) => {
         if (err) {
             console.log("error: ", err);
             result(err, null);
