@@ -44,8 +44,8 @@ Pasien.findAll = (result) => {
 };
 
 Pasien.update = (id_pasien, data_pasien, result) => {
-    connection.query("UPDATE data_pasien SET nama_pasien = ?, umur = ?, jenis_kelamin = ?, no_telp_pasien = ?, keluhan = ?, konsultasi_dokter = ? WHERE id_pasien = ?", 
-    [data_pasien.nama_pasien, data_pasien.umur, data_pasien.jenis_kelamin, data_pasien.no_telp_pasien, data_pasien.keluhan, data_pasien.konsultasi_dokter, id_pasien], 
+    connection.query("UPDATE data_pasien SET nama_pasien = ?, umur = ?, jenis_kelamin = ?, no_telp_pasien = ?, keluhan = ?, konsultasi_dokter = ?, jam_konsultasi = ? WHERE id_pasien = ?", 
+    [data_pasien.nama_pasien, data_pasien.umur, data_pasien.jenis_kelamin, data_pasien.no_telp_pasien, data_pasien.keluhan, data_pasien.konsultasi_dokter,data_pasien.jam_konsultasi, id_pasien], 
     (err, res) => {
         if (err) {
             console.log("error: ", err);
