@@ -1,6 +1,6 @@
 const connection = require('../db');
 
-const Pasien = function(pasien) {
+const Pasien = function(data_pasien) {
     this.nama_pasien = pasien.nama_pasien;
     this.umur = pasien.umur;
     this.jenis_kelamin = pasien.jenis_kelamin;
